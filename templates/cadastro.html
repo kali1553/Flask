@@ -1,0 +1,18 @@
+{% extends "template1.html" %}
+{% block conteudo %}
+<form action="/criarUsuario" method="post">
+  <fieldset>
+    <div class="form-group">
+      <label for="nome1">Nome</label>
+      <input type="text" id="nome1" name="nome1" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="senha1">Senha</label>
+      <input type="password" id="senha1" name="senha1" class="form-control">
+  <br>
+  <p><button type="submit" class="btn btn-primary btn-salvar">Cadastrar-se</button>
+    <button class="btn btn-primary" type="button"
+    onclick="window.location.href='/'">Voltar</button></p>
+  </fieldset>
+  <form>
+{% endblock %}

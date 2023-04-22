@@ -1,0 +1,12 @@
+{% extends "template1.html" %}
+{% block conteudo %}
+    <form method="POST" action="/autenticar">
+      <p><label>Nome de usuário:</label> <input class="form-control" type="text" name="usuario" required></p>
+      <p><label>Senha:</label> <input class="form-control" type="password" name="senha" required></p>
+      <p><button class="btn btn-primary" type="submit">Entrar</button> <button class="btn btn-primary" type="button"
+          onclick="window.location.href='/'">Voltar</button></p>
+    </form>
+  </div>
+</body>
+</html>
+{% endblock %}
